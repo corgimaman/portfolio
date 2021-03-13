@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  cursor: url("../too380.cur"), crosshair, auto !important;
 }
 
 /* brand color palette */
