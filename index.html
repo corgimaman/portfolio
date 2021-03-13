@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
   <script src="https://kit.fontawesome.com/806779c7fe.js" crossorigin="anonymous"></script> <!-- This is for the icons in the footer-->
-  <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> <!-- For my header fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet"> <!-- For my fonts -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- To animate divs -->
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
+    <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="300">
       <h2>Web Development and Environmental Science</h2>
     </div>
   </section>
@@ -37,7 +37,7 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000">
         <p>
           My name is Ida and welcome to my portfolio page. I entered the University of Houston August 2010, and graduated December 2013 with a Bachelor's of Science in Geology.
           I soon after got a job as a geophysicist and then left to Guam in January 2015 to pursue my masters degree. While on Guam, I recieved a SCUBA certificate and swam my first competitve swim (5 miles in the ocean).
@@ -56,9 +56,9 @@
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Projects</h2>
-      <div class="flex-container">
+      <div class="flex-container" data-aos="fade-up" data-aos-duration="2000">
 
-        <a href="#" class="flex-item portfolio">
+        <a href="#" class="flex-item portfolio" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
           <div>
             <h3>This Portfolio!</h3>
             <span>HTML/CSS</span>
@@ -99,7 +99,7 @@
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000">
         <address>
           <a href="tel:+12813308004"><i class="fas fa-phone-square"></i> phone me!</a> <!-- Put in not my phone number lol -->
           <a href="mailto:ida.shalilian@gmail.com"><i class="fas fa-envelope"></i> e-mail me!</a>
@@ -110,6 +110,12 @@
       </div>
     </section>
   </main>
+
+  <!-- Following script is for animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
