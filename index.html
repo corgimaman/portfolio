@@ -1,121 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ida Shalilian // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-  <script src="https://kit.fontawesome.com/806779c7fe.js" crossorigin="anonymous"></script> <!-- This is for the icons in the footer-->
-  <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet"> <!-- For my fonts -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- To animate divs -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/uikit-rtl.css">
+    <link rel="stylesheet" href="./assets/css/uikit.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ida Shalilian // Web Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/taurus.png">
 </head>
-
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Ida Shalilian</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#work">Projects</a>
-      <a href="#contact">Contact Me</a>
-      <!-- Link this to your resume! -->
-      <a href="https://www.linkedin.com/in/ida-s-86b21b68/">Resume</a>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="300">
-      <h2>Web Development and Environmental Science</h2>
+    <div class="uk-container uk-container-xsmall uk-margin-medium-top">
+        <div uk-grid>
+            <div class="uk-text-center">
+                <img class ="uk-border-circle uk-align-center uk-align-left@s" src="assets/images/crop.jpg" width="200" height="200">
+                    <span class="uk-text-large"><span class="wave">👋🏽</span>Hafa adai!<br> I'm Ida Shalilian.</span><br>
+                    I'm a budding full-stack webdeveloper with knowledge in HTML, CSS, JavaScript, and APIs.<br>
+                    <span class="uk-margin-small-right">
+                        <a href="mailto:ida.shalilian@gmail.com"><span uk-icon="icon: mail; ratio: 1.5"></span></a>
+                        <a href="tel:281-241-9374"><span uk-icon="icon: receiver; ratio: 1.5"></span></a>
+                        <a href="https://github.com/corgimaman"><span uk-icon="icon: github-alt; ratio: 1.5"></span></a>
+                        <a href="https://www.linkedin.com/in/ida-s-86b21b68/"><span uk-icon="icon: linkedin; ratio: 1.5"></span></a>
+                        <a href="./assets/ShalilianIdaResume2021.pdf"><span uk-icon="icon: file-text; ratio: 1.5"></span></a>
+                    </span>
+            </div>
+        </div>
+        <hr>
     </div>
-  </section>
+    <div class="uk-container uk-container-xsmall">
+        <h2>Projects</h2>
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title" href="#">Secure Password Generator</a>
+                <div class="uk-accordion-content uk-text-center">
+                    A simple secure password generator, highlighting vanilla JavaScript skills.<br>
+                    <img src="https://github.com/corgimaman/passwordgenerator/raw/main/Screenshots/initial.png" alt="Password Generator Screenshot" width="350" height="300"><br>
+                    <a href="https://corgimaman.github.io/passwordgenerator/">Deployed Project</a> <br>
+                    <a href="https://github.com/corgimaman/passwordgenerator">Github Repo</a>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">JavaScript Quiz</a>
+                <div class="uk-accordion-content uk-text-center">
+                    A fun timed JavaScript Quiz, with sound and point system, highlighting vanilla JavaScript skills.<br>
+                    <img src="https://github.com/corgimaman/jsquiz/raw/main/assets/images/JavaScriptQuiz.gif" alt="Quiz Screenshot Demo" width="350" height="300"><br>
+                    <a href="https://corgimaman.github.io/jsquiz/">Deployed Project</a> <br>
+                    <a href="https://github.com/corgimaman/jsquiz">Github Repo</a>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Work Day Scheduler</a>
+                <div class="uk-accordion-content uk-text-center">
+                    This was a simple HTML/CSS/vanilla JavaScript project that uses the local storage to save data.<br>
+                    <img src="https://github.com/corgimaman/workday-scheduler/raw/main/assets/images/demo.gif" alt="Workday Scheduler Screenshot" width="350" height="300"><br>
+                    <a href="https://corgimaman.github.io/workday-scheduler/">Deployed Project</a> <br>
+                    <a href="https://github.com/corgimaman/workday-scheduler">Github Repo</a>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Group Project: Ducking Awesome Soundboard</a>
+                <div class="uk-accordion-content uk-text-center">
+                    A fun project highlighting server-side APIs and JavaScript.<br>
+                    <img src="https://github.com/corgimaman/groupProject/raw/main/assets/images/entrance.png" alt="Soundboard Screenshot" width="350" height="300"><br>
+                    <a href="https://corgimaman.github.io/groupProject/">Deployed Project</a> <br>
+                    <a href="https://github.com/corgimaman/groupProject">Github Repo</a>
+                </div>
+            </li>
+        </ul>
+    </div>  
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <p>
-          My name is Ida and welcome to my portfolio page. I entered the University of Houston August 2010, and graduated December 2013 with a Bachelor's of Science in Geology.
-          I soon after got a job as a geophysicist and then left to Guam in January 2015 to pursue my masters degree. While on Guam, I recieved a SCUBA certificate and swam my first competitve swim (5 miles in the ocean).
-          I graduated two years later with a Masters of Science in Environmental Science, presenting my thesis to a packed room, including people from the local water works agency, EPA, and even a senator.
-          Shortly after presenting my thesis, I hopped on an airplane and backpacked around Asia for a few months. During that time, I did a 200-hour Yoga Teacher Training course in Rishikesh, India.
-          I returned back home to Houston, Texas and worked independently as a caretaker before working full time as an Environmental Consultant (March 2018 to present).
-        </p>
-        <p>
-          In February 2021, I took a Full Stack Web Developer Bootcamp from Rice University and received my certificate in August 2021. During this bootcamp I learned to design responsive websites, work with JavaScript, GitHub, and more.
-          I am also proficient in photography, video filimng, and processing (Adobe Photoshop and Lightroom). In my spare time I can be found at the gym, traveling, or doing yoga or embroidery.
-          My goal is to end up somewhere in between the beach and mountains, volunteering rescuing animals, and being able to travel to see my family.
-        </p>
-      </div>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Projects</h2>
-      <div class="flex-container" data-aos="fade-up" data-aos-duration="2000">
-
-        <a href="#" class="flex-item portfolio" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
-          <div>
-            <h3>This Portfolio!</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        
-        <a href="https://scratch.mit.edu/projects/481472165/" class="flex-item scratch-game">
-          <div>
-            <h3>Scratch Game</h3>
-            <span>Programming Logic</span>
-          </div>
-        </a>
-        <a href="#" class="flex-item react-calc">
-          <div>
-            <h3>Calculator</h3>
-            <span>React/JavaScript/CSS</span>
-          </div>
-        </a>
-
-        <!-- <a href="#" class="flex-item pastel-puzzles">
-          <div>
-            <h3>Pastel Puzzels</h3>
-            <span>MERN Stack</span>
-          </div>
-        </a>
-
-    
-        <a href="#" class="flex-item run-buddy">
-          <div>
-            <h3>Run Buddy</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a> -->
-
-      </div>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <address>
-          <a href="tel:+12813308004"><i class="fas fa-phone-square"></i> phone me!</a> <!-- Put in not my phone number lol -->
-          <a href="mailto:ida.shalilian@gmail.com"><i class="fas fa-envelope"></i> e-mail me!</a>
-          <a href="https://github.com/corgimaman"><i class="fab fa-github"></i> my github!</a>
-          <!-- <a href="#">Twitter</a>
-          <a href="#">Spotify</a> -->
-        </address>
-      </div>
-    </section>
-  </main>
-
-  <!-- Following script is for animations -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="assets/js/uikit.js"></script>
+    <script src="assets/js/uikit-icons.js"></script>
 </body>
-
 </html>
